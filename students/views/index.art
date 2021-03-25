@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学生档案</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <form action="/add" method="post">
+   <fieldset>
+     <legend>学生档案</legend>
+     <label>
+       姓名：<input type="text" class="normal" autofocus placeholder="请输入姓名" name="name">
+     </label>
+     <label>
+      年龄：<input type="text" class="normal" autofocus placeholder="请输入年龄" name="age">
+    </label>
+    <label>
+      性别：
+      <input type="radio" value="male" name="sex"> 男 
+      <input type="radio" value="female" name="sex"> 女
+    </label>
+    <label>
+      邮箱：<input type="text" class="normal" autofocus placeholder="请输入邮箱" name="email">
+    </label>
+    <label>
+      爱好：
+      <input type="checkbox" name="hobbies" value="coding">代码
+      <input type="checkbox" name="hobbies" value="basketball">篮球
+      <input type="checkbox" name="hobbies" value="sleep">睡觉
+    </label>
+    <label>
+      所属学院：
+      <select name="collage" id="collage" class="normal">
+        <option value="frontend">前端</option>
+        <option value="backend">后端</option>
+        <option value="c++">C++</option>
+        <option value="java">java</option>
+        <option value="javascript">javascript</option>
+        <option value="python">python</option>
+      </select>
+    </label>
+    <label>
+      入学日期：
+      <input type="date" class="normal" name="enterDate">
+    </label>
+    <label class="btn">
+      <input type="submit" class="normal" value="提交">
+    </label>
+   </fieldset>
+  </form>
+</body>
+</html>
